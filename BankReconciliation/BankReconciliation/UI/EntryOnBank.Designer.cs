@@ -32,9 +32,19 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.searchByIDTextBox = new System.Windows.Forms.TextBox();
+            this.searchByCreditBalanceTextBox = new System.Windows.Forms.TextBox();
+            this.searchByDebitBalanceTextBox = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.transactionIdTextBox = new System.Windows.Forms.TextBox();
+            this.doneButton = new System.Windows.Forms.Button();
+            this.amountTextBox = new System.Windows.Forms.TextBox();
+            this.transactionLabel = new System.Windows.Forms.Label();
+            this.idLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,15 +57,6 @@
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.searchByIDTextBox = new System.Windows.Forms.TextBox();
-            this.searchByCreditBalanceTextBox = new System.Windows.Forms.TextBox();
-            this.searchByDebitBalanceTextBox = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.transactionIdTextBox = new System.Windows.Forms.TextBox();
-            this.doneButton = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.transactionLabel = new System.Windows.Forms.Label();
-            this.idLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,7 +81,111 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(988, 484);
             this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // searchByIDTextBox
+            // 
+            this.searchByIDTextBox.Location = new System.Drawing.Point(490, 24);
+            this.searchByIDTextBox.Name = "searchByIDTextBox";
+            this.searchByIDTextBox.Size = new System.Drawing.Size(100, 20);
+            this.searchByIDTextBox.TabIndex = 1;
+            this.searchByIDTextBox.TextChanged += new System.EventHandler(this.searchByIDTextBox_TextChanged);
+            // 
+            // searchByCreditBalanceTextBox
+            // 
+            this.searchByCreditBalanceTextBox.Location = new System.Drawing.Point(810, 27);
+            this.searchByCreditBalanceTextBox.Name = "searchByCreditBalanceTextBox";
+            this.searchByCreditBalanceTextBox.Size = new System.Drawing.Size(100, 20);
+            this.searchByCreditBalanceTextBox.TabIndex = 2;
+            this.searchByCreditBalanceTextBox.TextChanged += new System.EventHandler(this.searchByCreditBalanceTextBox_TextChanged);
+            // 
+            // searchByDebitBalanceTextBox
+            // 
+            this.searchByDebitBalanceTextBox.Location = new System.Drawing.Point(1120, 24);
+            this.searchByDebitBalanceTextBox.Name = "searchByDebitBalanceTextBox";
+            this.searchByDebitBalanceTextBox.Size = new System.Drawing.Size(100, 20);
+            this.searchByDebitBalanceTextBox.TabIndex = 3;
+            this.searchByDebitBalanceTextBox.TextChanged += new System.EventHandler(this.searchByDebitBalanceTextBox_TextChanged);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "dd/MM/yyyy";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(137, 140);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(100, 20);
+            this.dateTimePicker1.TabIndex = 4;
+            // 
+            // transactionIdTextBox
+            // 
+            this.transactionIdTextBox.Location = new System.Drawing.Point(137, 87);
+            this.transactionIdTextBox.Name = "transactionIdTextBox";
+            this.transactionIdTextBox.ReadOnly = true;
+            this.transactionIdTextBox.Size = new System.Drawing.Size(100, 20);
+            this.transactionIdTextBox.TabIndex = 5;
+            // 
+            // doneButton
+            // 
+            this.doneButton.Location = new System.Drawing.Point(162, 182);
+            this.doneButton.Name = "doneButton";
+            this.doneButton.Size = new System.Drawing.Size(75, 23);
+            this.doneButton.TabIndex = 6;
+            this.doneButton.Text = "Done";
+            this.doneButton.UseVisualStyleBackColor = true;
+            this.doneButton.Click += new System.EventHandler(this.doneButton_Click);
+            // 
+            // amountTextBox
+            // 
+            this.amountTextBox.Location = new System.Drawing.Point(137, 114);
+            this.amountTextBox.Name = "amountTextBox";
+            this.amountTextBox.ReadOnly = true;
+            this.amountTextBox.Size = new System.Drawing.Size(100, 20);
+            this.amountTextBox.TabIndex = 7;
+            // 
+            // transactionLabel
+            // 
+            this.transactionLabel.AutoSize = true;
+            this.transactionLabel.Location = new System.Drawing.Point(29, 121);
+            this.transactionLabel.Name = "transactionLabel";
+            this.transactionLabel.Size = new System.Drawing.Size(102, 13);
+            this.transactionLabel.TabIndex = 8;
+            this.transactionLabel.Text = "Transaction Amount";
+            // 
+            // idLabel
+            // 
+            this.idLabel.AutoSize = true;
+            this.idLabel.Location = new System.Drawing.Point(96, 90);
+            this.idLabel.Name = "idLabel";
+            this.idLabel.Size = new System.Drawing.Size(16, 13);
+            this.idLabel.TabIndex = 9;
+            this.idLabel.Text = "Id";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(997, 27);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(116, 13);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Serch by Debit Amount";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(680, 31);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(124, 13);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Search by Credit Amount";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(358, 27);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(126, 13);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Search by Transaction Id";
             // 
             // Column1
             // 
@@ -146,16 +251,12 @@
             // 
             // Column10
             // 
-            dataGridViewCellStyle5.NullValue = "null";
-            this.Column10.DefaultCellStyle = dataGridViewCellStyle5;
             this.Column10.HeaderText = "Credit";
             this.Column10.Name = "Column10";
             this.Column10.Width = 70;
             // 
             // Column11
             // 
-            dataGridViewCellStyle6.NullValue = "null";
-            this.Column11.DefaultCellStyle = dataGridViewCellStyle6;
             this.Column11.HeaderText = "Debit";
             this.Column11.Name = "Column11";
             this.Column11.Width = 70;
@@ -166,89 +267,17 @@
             this.Column12.Name = "Column12";
             this.Column12.Width = 75;
             // 
-            // searchByIDTextBox
-            // 
-            this.searchByIDTextBox.Location = new System.Drawing.Point(490, 24);
-            this.searchByIDTextBox.Name = "searchByIDTextBox";
-            this.searchByIDTextBox.Size = new System.Drawing.Size(100, 20);
-            this.searchByIDTextBox.TabIndex = 1;
-            this.searchByIDTextBox.TextChanged += new System.EventHandler(this.searchByIDTextBox_TextChanged);
-            // 
-            // searchByCreditBalanceTextBox
-            // 
-            this.searchByCreditBalanceTextBox.Location = new System.Drawing.Point(632, 24);
-            this.searchByCreditBalanceTextBox.Name = "searchByCreditBalanceTextBox";
-            this.searchByCreditBalanceTextBox.Size = new System.Drawing.Size(100, 20);
-            this.searchByCreditBalanceTextBox.TabIndex = 2;
-            // 
-            // searchByDebitBalanceTextBox
-            // 
-            this.searchByDebitBalanceTextBox.Location = new System.Drawing.Point(810, 24);
-            this.searchByDebitBalanceTextBox.Name = "searchByDebitBalanceTextBox";
-            this.searchByDebitBalanceTextBox.Size = new System.Drawing.Size(100, 20);
-            this.searchByDebitBalanceTextBox.TabIndex = 3;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CustomFormat = "dd/MM/yyyy";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(137, 140);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(100, 20);
-            this.dateTimePicker1.TabIndex = 4;
-            // 
-            // transactionIdTextBox
-            // 
-            this.transactionIdTextBox.Location = new System.Drawing.Point(137, 87);
-            this.transactionIdTextBox.Name = "transactionIdTextBox";
-            this.transactionIdTextBox.ReadOnly = true;
-            this.transactionIdTextBox.Size = new System.Drawing.Size(100, 20);
-            this.transactionIdTextBox.TabIndex = 5;
-            // 
-            // doneButton
-            // 
-            this.doneButton.Location = new System.Drawing.Point(162, 182);
-            this.doneButton.Name = "doneButton";
-            this.doneButton.Size = new System.Drawing.Size(75, 23);
-            this.doneButton.TabIndex = 6;
-            this.doneButton.Text = "Done";
-            this.doneButton.UseVisualStyleBackColor = true;
-            this.doneButton.Click += new System.EventHandler(this.doneButton_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(137, 114);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 7;
-            // 
-            // transactionLabel
-            // 
-            this.transactionLabel.AutoSize = true;
-            this.transactionLabel.Location = new System.Drawing.Point(29, 121);
-            this.transactionLabel.Name = "transactionLabel";
-            this.transactionLabel.Size = new System.Drawing.Size(102, 13);
-            this.transactionLabel.TabIndex = 8;
-            this.transactionLabel.Text = "Transaction Amount";
-            // 
-            // idLabel
-            // 
-            this.idLabel.AutoSize = true;
-            this.idLabel.Location = new System.Drawing.Point(96, 90);
-            this.idLabel.Name = "idLabel";
-            this.idLabel.Size = new System.Drawing.Size(16, 13);
-            this.idLabel.TabIndex = 9;
-            this.idLabel.Text = "Id";
-            // 
             // EntryOnBank
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1232, 533);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.idLabel);
             this.Controls.Add(this.transactionLabel);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.amountTextBox);
             this.Controls.Add(this.doneButton);
             this.Controls.Add(this.transactionIdTextBox);
             this.Controls.Add(this.dateTimePicker1);
@@ -271,6 +300,15 @@
         private System.Windows.Forms.TextBox searchByIDTextBox;
         private System.Windows.Forms.TextBox searchByCreditBalanceTextBox;
         private System.Windows.Forms.TextBox searchByDebitBalanceTextBox;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox transactionIdTextBox;
+        private System.Windows.Forms.Button doneButton;
+        private System.Windows.Forms.TextBox amountTextBox;
+        private System.Windows.Forms.Label transactionLabel;
+        private System.Windows.Forms.Label idLabel;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
@@ -283,11 +321,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox transactionIdTextBox;
-        private System.Windows.Forms.Button doneButton;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label transactionLabel;
-        private System.Windows.Forms.Label idLabel;
     }
 }

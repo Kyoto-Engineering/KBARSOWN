@@ -77,11 +77,6 @@ namespace BankReconciliation.UI
                 LoadData();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-           
-        }
-
         private void searchByIDTextBox_TextChanged(object sender, EventArgs e)
         {
             try
@@ -129,10 +124,97 @@ namespace BankReconciliation.UI
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
+        
         private void doneButton_Click(object sender, EventArgs e)
         {
+            if (transactionIdTextBox.Text == "")
+            {
+                MessageBox.Show(@"Please Select Desired Row from the List", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                transactionIdTextBox.Focus();
+                return;
+            }
+            try
+            {
 
+                con = new SqlConnection(cs.DBConn);
+                con.Open();
+                string cb = "Update Transactions Set ValueDate=@d2 where Id='" +transactionIdTextBox.Text + "'";
+                cmd = new SqlCommand(cb);
+                cmd.Connection = con;
+                cmd.Parameters.AddWithValue("@d2", dateTimePicker1.Value.Date);
+         
+                rdr = cmd.ExecuteReader();
+                con.Close();
+                MessageBox.Show("Successfully updated", "Record", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //Reset();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
+        }
+
+        private void searchByCreditBalanceTextBox_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                cmd = new SqlCommand(
+                    "SELECT Transactions.Id, Transactions.Date, BankAccounts.ShortName AS 'Bank Name' , Transactions.AccountNo AS 'Account No', Transactions.TransactionType AS 'Txn Type', Transactions.Benificiary, Transactions.ChequeFromBank AS 'Txn with Bank', Transactions.CheckNo AS 'Cheque No', Transactions.Particulars,  Transactions.Credit, Transactions.Debit, Transactions.CurrentBalance AS 'Actual Balance' FROM Transactions INNER JOIN BankAccounts ON Transactions.AccountNo = BankAccounts.AccountNo Where Transactions.ValueDate is null and Transactions.Credit like '" + searchByCreditBalanceTextBox.Text + "%'", con);
+                rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+                dataGridView1.Rows.Clear();
+                while (rdr.Read())
+                {
+                    dataGridView1.Rows.Add(rdr[0], rdr[1], rdr[2], rdr[3], rdr[4], rdr[5], rdr[6], rdr[7], rdr[8], rdr[9],
+                        rdr[10], rdr[11]);
+                }
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void searchByDebitBalanceTextBox_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                cmd = new SqlCommand(
+                    "SELECT Transactions.Id, Transactions.Date, BankAccounts.ShortName AS 'Bank Name' , Transactions.AccountNo AS 'Account No', Transactions.TransactionType AS 'Txn Type', Transactions.Benificiary, Transactions.ChequeFromBank AS 'Txn with Bank', Transactions.CheckNo AS 'Cheque No', Transactions.Particulars,  Transactions.Credit, Transactions.Debit, Transactions.CurrentBalance AS 'Actual Balance' FROM Transactions INNER JOIN BankAccounts ON Transactions.AccountNo = BankAccounts.AccountNo Where Transactions.ValueDate is null and Transactions.Debit like '" + searchByDebitBalanceTextBox.Text + "%'", con);
+                rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+                dataGridView1.Rows.Clear();
+                while (rdr.Read())
+                {
+                    dataGridView1.Rows.Add(rdr[0], rdr[1], rdr[2], rdr[3], rdr[4], rdr[5], rdr[6], rdr[7], rdr[8], rdr[9],
+                        rdr[10], rdr[11]);
+                }
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow dr = dataGridView1.CurrentRow;
+            transactionIdTextBox.Text = dr.Cells[0].Value.ToString();
+            if (dr.Cells[9].Value.ToString() == "")
+            {
+                transactionLabel.Text = "Debit Amount";
+                amountTextBox.Text = dr.Cells[10].Value.ToString();
+            }
+            else if (dr.Cells[10].Value.ToString() == "")
+            {
+                transactionLabel.Text = "Credit Amount";
+                amountTextBox.Text = dr.Cells[9].Value.ToString();
+            }
         }
     }
 }
