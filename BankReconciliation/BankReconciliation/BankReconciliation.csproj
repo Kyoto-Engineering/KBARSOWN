@@ -27,7 +27,7 @@
     <MinimumRequiredVersion>1.0.0.27</MinimumRequiredVersion>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>34</ApplicationRevision>
+    <ApplicationRevision>37</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -375,6 +375,12 @@
     <Compile Include="UI\EditDepositForm2.Designer.cs">
       <DependentUpon>EditDepositForm2.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\EntryOnBank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\EntryOnBank.Designer.cs">
+      <DependentUpon>EntryOnBank.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\FirstStepDeposit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -581,6 +587,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\EditDepositForm2.resx">
       <DependentUpon>EditDepositForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\EntryOnBank.resx">
+      <DependentUpon>EntryOnBank.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FirstStepDeposit.resx">
       <DependentUpon>FirstStepDeposit.cs</DependentUpon>
