@@ -28,23 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.searchByIDTextBox = new System.Windows.Forms.TextBox();
-            this.searchByCreditBalanceTextBox = new System.Windows.Forms.TextBox();
-            this.searchByDebitBalanceTextBox = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.transactionIdTextBox = new System.Windows.Forms.TextBox();
-            this.doneButton = new System.Windows.Forms.Button();
-            this.amountTextBox = new System.Windows.Forms.TextBox();
-            this.transactionLabel = new System.Windows.Forms.Label();
-            this.idLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,6 +45,21 @@
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.searchByIDTextBox = new System.Windows.Forms.TextBox();
+            this.searchByCreditBalanceTextBox = new System.Windows.Forms.TextBox();
+            this.searchByDebitBalanceTextBox = new System.Windows.Forms.TextBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.transactionIdTextBox = new System.Windows.Forms.TextBox();
+            this.doneButton = new System.Windows.Forms.Button();
+            this.amountTextBox = new System.Windows.Forms.TextBox();
+            this.transactionLabel = new System.Windows.Forms.Label();
+            this.idLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,6 +85,86 @@
             this.dataGridView1.Size = new System.Drawing.Size(988, 484);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "ID";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 40;
+            // 
+            // Column2
+            // 
+            dataGridViewCellStyle9.Format = "dd/MM/yyyy";
+            dataGridViewCellStyle9.NullValue = null;
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle9;
+            this.Column2.HeaderText = "Date";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 70;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Bank Name";
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 55;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Account No";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 95;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Txn Type";
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 55;
+            // 
+            // Column6
+            // 
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle10;
+            this.Column6.HeaderText = "Benificiary";
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column7.DefaultCellStyle = dataGridViewCellStyle11;
+            this.Column7.HeaderText = "Txn With Bank";
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 70;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Cheque No";
+            this.Column8.Name = "Column8";
+            this.Column8.Width = 70;
+            // 
+            // Column9
+            // 
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column9.DefaultCellStyle = dataGridViewCellStyle12;
+            this.Column9.HeaderText = "Particulars";
+            this.Column9.Name = "Column9";
+            this.Column9.Width = 130;
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "Credit";
+            this.Column10.Name = "Column10";
+            this.Column10.Width = 70;
+            // 
+            // Column11
+            // 
+            this.Column11.HeaderText = "Debit";
+            this.Column11.Name = "Column11";
+            this.Column11.Width = 70;
+            // 
+            // Column12
+            // 
+            this.Column12.HeaderText = "Actual Balance";
+            this.Column12.Name = "Column12";
+            this.Column12.Width = 75;
             // 
             // searchByIDTextBox
             // 
@@ -109,10 +192,12 @@
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.Checked = false;
             this.dateTimePicker1.CustomFormat = "dd/MM/yyyy";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(137, 140);
+            this.dateTimePicker1.Location = new System.Drawing.Point(137, 185);
             this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.ShowCheckBox = true;
             this.dateTimePicker1.Size = new System.Drawing.Size(100, 20);
             this.dateTimePicker1.TabIndex = 4;
             // 
@@ -126,7 +211,7 @@
             // 
             // doneButton
             // 
-            this.doneButton.Location = new System.Drawing.Point(162, 182);
+            this.doneButton.Location = new System.Drawing.Point(162, 211);
             this.doneButton.Name = "doneButton";
             this.doneButton.Size = new System.Drawing.Size(75, 23);
             this.doneButton.TabIndex = 6;
@@ -187,91 +272,41 @@
             this.label3.TabIndex = 12;
             this.label3.Text = "Search by Transaction Id";
             // 
-            // Column1
+            // label4
             // 
-            this.Column1.HeaderText = "ID";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 40;
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(71, 192);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(60, 13);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Value Date";
             // 
-            // Column2
+            // label5
             // 
-            dataGridViewCellStyle1.Format = "dd/MM/yyyy";
-            dataGridViewCellStyle1.NullValue = null;
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Column2.HeaderText = "Date";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 70;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(59, 151);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(0, 13);
+            this.label5.TabIndex = 14;
             // 
-            // Column3
+            // checkBox1
             // 
-            this.Column3.HeaderText = "Bank Name";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 55;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Account No";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 95;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Txn Type";
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 55;
-            // 
-            // Column6
-            // 
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle2;
-            this.Column6.HeaderText = "Benificiary";
-            this.Column6.Name = "Column6";
-            // 
-            // Column7
-            // 
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column7.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Column7.HeaderText = "Txn With Bank";
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 70;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Cheque No";
-            this.Column8.Name = "Column8";
-            this.Column8.Width = 70;
-            // 
-            // Column9
-            // 
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column9.DefaultCellStyle = dataGridViewCellStyle4;
-            this.Column9.HeaderText = "Particulars";
-            this.Column9.Name = "Column9";
-            this.Column9.Width = 130;
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "Credit";
-            this.Column10.Name = "Column10";
-            this.Column10.Width = 70;
-            // 
-            // Column11
-            // 
-            this.Column11.HeaderText = "Debit";
-            this.Column11.Name = "Column11";
-            this.Column11.Width = 70;
-            // 
-            // Column12
-            // 
-            this.Column12.HeaderText = "Actual Balance";
-            this.Column12.Name = "Column12";
-            this.Column12.Width = 75;
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(137, 151);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(91, 17);
+            this.checkBox1.TabIndex = 15;
+            this.checkBox1.Text = "Is Reconciled";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // EntryOnBank
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1232, 533);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -321,5 +356,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.CheckBox checkBox1;
     }
 }

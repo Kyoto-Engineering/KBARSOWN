@@ -31,7 +31,7 @@ namespace BankReconciliation.UI
                 con.Open();
                 cmd =
                     new SqlCommand(
-                        "SELECT Transactions.Id, Transactions.Date, BankAccounts.ShortName AS 'Bank Name' , Transactions.AccountNo AS 'Account No', Transactions.TransactionType AS 'Txn Type', Transactions.Benificiary, Transactions.ChequeFromBank AS 'Txn with Bank', Transactions.CheckNo AS 'Cheque No', Transactions.Particulars,  Transactions.Credit, Transactions.Debit, Transactions.CurrentBalance AS 'Actual Balance' FROM Transactions INNER JOIN BankAccounts ON Transactions.AccountNo = BankAccounts.AccountNo Where Transactions.ValueDate is null",con);
+                        "SELECT Transactions.Id, Transactions.Date, BankAccounts.ShortName AS 'Bank Name' , Transactions.AccountNo AS 'Account No', Transactions.TransactionType AS 'Txn Type', Transactions.Benificiary, Transactions.ChequeFromBank AS 'Txn with Bank', Transactions.CheckNo AS 'Cheque No', Transactions.Particulars,  Transactions.Credit, Transactions.Debit, Transactions.CurrentBalance AS 'Actual Balance' FROM Transactions INNER JOIN BankAccounts ON Transactions.AccountNo = BankAccounts.AccountNo Where Transactions.Reconciled=0", con);
                 rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
                 //dataGridView1.Columns[0].Width = 40;
                 //dataGridView1.Columns[1].Width = 70;
@@ -131,22 +131,29 @@ namespace BankReconciliation.UI
             {
                 MessageBox.Show(@"Please Select Desired Row from the List", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 transactionIdTextBox.Focus();
-                return;
             }
+            else if (!checkBox1.Checked)
+            {
+                MessageBox.Show(@"Select As Reconciled To Update");
+            }
+            else if (!dateTimePicker1.Checked)
+            {
+                MessageBox.Show(@"Select Value Date To Update");
+            } 
             try
             {
 
                 con = new SqlConnection(cs.DBConn);
                 con.Open();
-                string cb = "Update Transactions Set ValueDate=@d2 where Id='" +transactionIdTextBox.Text + "'";
+                string cb = "UPDATE       Transactions SET ValueDate = @d1, Reconciled = 1 WHERE (Id = @d2)";
                 cmd = new SqlCommand(cb);
                 cmd.Connection = con;
-                cmd.Parameters.AddWithValue("@d2", dateTimePicker1.Value.Date);
-         
+                cmd.Parameters.AddWithValue("@d1", dateTimePicker1.Value.Date);
+                cmd.Parameters.AddWithValue("@d2", transactionIdTextBox.Text);
                 rdr = cmd.ExecuteReader();
                 con.Close();
                 MessageBox.Show("Successfully updated", "Record", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //Reset();
+                Reset();
             }
             catch (Exception ex)
             {
@@ -155,6 +162,13 @@ namespace BankReconciliation.UI
             
         }
 
+        private void Reset()
+        {
+            checkBox1.Checked = false;
+            dateTimePicker1.Checked = false;
+            transactionIdTextBox.Clear();
+            amountTextBox.Clear();
+        }
         private void searchByCreditBalanceTextBox_TextChanged(object sender, EventArgs e)
         {
             try
