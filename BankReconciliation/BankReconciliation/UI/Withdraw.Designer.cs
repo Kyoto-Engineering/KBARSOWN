@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Withdraw));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.cmbdebitToBank = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.eftAccountNoWTextBox = new System.Windows.Forms.TextBox();
@@ -60,8 +62,6 @@
             this.txtAccountNo = new System.Windows.Forms.TextBox();
             this.txtWithwrawId = new System.Windows.Forms.TextBox();
             this.newTxtStatus = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -103,6 +103,23 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Withdraw";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(222, 50);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(307, 32);
+            this.textBox2.TabIndex = 71;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(33, 55);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(172, 20);
+            this.label6.TabIndex = 70;
+            this.label6.Text = "Fund Requisition No";
             // 
             // cmbdebitToBank
             // 
@@ -366,6 +383,7 @@
             this.creditWTextBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.creditWTextBox.Location = new System.Drawing.Point(225, 297);
             this.creditWTextBox.Name = "creditWTextBox";
+            this.creditWTextBox.ShortcutsEnabled = false;
             this.creditWTextBox.Size = new System.Drawing.Size(307, 32);
             this.creditWTextBox.TabIndex = 8;
             this.creditWTextBox.TextChanged += new System.EventHandler(this.creditWTextBox_TextChanged);
@@ -482,23 +500,6 @@
             this.newTxtStatus.Size = new System.Drawing.Size(42, 13);
             this.newTxtStatus.TabIndex = 9;
             this.newTxtStatus.Visible = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(33, 55);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(172, 20);
-            this.label6.TabIndex = 70;
-            this.label6.Text = "Fund Requisition No";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(222, 50);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(307, 32);
-            this.textBox2.TabIndex = 71;
             // 
             // Withdraw
             // 

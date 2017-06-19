@@ -330,6 +330,7 @@
             // 
             this.creditTextBox.Location = new System.Drawing.Point(269, 279);
             this.creditTextBox.Name = "creditTextBox";
+            this.creditTextBox.ShortcutsEnabled = false;
             this.creditTextBox.Size = new System.Drawing.Size(293, 32);
             this.creditTextBox.TabIndex = 5;
             this.creditTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.creditTextBox_KeyDown);
