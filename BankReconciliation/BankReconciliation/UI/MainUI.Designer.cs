@@ -46,6 +46,7 @@
             this.lblUser3 = new System.Windows.Forms.Label();
             this.lblUser2 = new System.Windows.Forms.Label();
             this.lblUserk = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +55,7 @@
             this.button1.BackColor = System.Drawing.Color.LightSalmon;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Fuchsia;
-            this.button1.Location = new System.Drawing.Point(6, 167);
+            this.button1.Location = new System.Drawing.Point(2, 142);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(121, 55);
             this.button1.TabIndex = 2;
@@ -67,7 +68,7 @@
             this.depositButton.BackColor = System.Drawing.Color.MistyRose;
             this.depositButton.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.depositButton.ForeColor = System.Drawing.Color.Fuchsia;
-            this.depositButton.Location = new System.Drawing.Point(6, 97);
+            this.depositButton.Location = new System.Drawing.Point(6, 79);
             this.depositButton.Name = "depositButton";
             this.depositButton.Size = new System.Drawing.Size(121, 57);
             this.depositButton.TabIndex = 1;
@@ -91,6 +92,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Controls.Add(this.registerButton);
             this.groupBox1.Controls.Add(this.button5);
@@ -109,7 +111,7 @@
             this.button2.BackColor = System.Drawing.Color.PeachPuff;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.ForestGreen;
-            this.button2.Location = new System.Drawing.Point(10, 331);
+            this.button2.Location = new System.Drawing.Point(6, 266);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(113, 63);
             this.button2.TabIndex = 6;
@@ -147,7 +149,7 @@
             this.checkLoadingButton.BackColor = System.Drawing.Color.SeaShell;
             this.checkLoadingButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkLoadingButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.checkLoadingButton.Location = new System.Drawing.Point(6, 248);
+            this.checkLoadingButton.Location = new System.Drawing.Point(6, 203);
             this.checkLoadingButton.Name = "checkLoadingButton";
             this.checkLoadingButton.Size = new System.Drawing.Size(117, 57);
             this.checkLoadingButton.TabIndex = 4;
@@ -233,6 +235,19 @@
             this.lblUserk.TabIndex = 11;
             this.lblUserk.Text = "l";
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.PeachPuff;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.ForestGreen;
+            this.button3.Location = new System.Drawing.Point(6, 349);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(113, 63);
+            this.button3.TabIndex = 10;
+            this.button3.Text = "Reconcile Transaction";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            // 
             // MainUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -277,6 +292,7 @@
         internal System.Windows.Forms.Label lblUser3;
         private System.Windows.Forms.Label lblUser2;
         internal System.Windows.Forms.Label lblUserk;
+        private System.Windows.Forms.Button button3;
 
     }
 }

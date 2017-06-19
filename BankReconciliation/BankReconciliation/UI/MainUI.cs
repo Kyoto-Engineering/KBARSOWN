@@ -129,5 +129,13 @@ namespace BankReconciliation
         {
             
         }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            EntryOnBank f2 = new EntryOnBank();
+            this.Visible = false;
+            f2.ShowDialog();
+            this.Visible = true;
+        }
     }
 }
