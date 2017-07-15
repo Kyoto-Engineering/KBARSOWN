@@ -73,6 +73,7 @@
             // 
             this.causeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.causeTextBox.Location = new System.Drawing.Point(165, 148);
+            this.causeTextBox.MaxLength = 50;
             this.causeTextBox.Name = "causeTextBox";
             this.causeTextBox.Size = new System.Drawing.Size(391, 26);
             this.causeTextBox.TabIndex = 3;

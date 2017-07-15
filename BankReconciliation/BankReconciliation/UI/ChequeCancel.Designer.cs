@@ -122,6 +122,7 @@
             // 
             this.causeTextBox.Location = new System.Drawing.Point(340, 198);
             this.causeTextBox.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.causeTextBox.MaxLength = 50;
             this.causeTextBox.Name = "causeTextBox";
             this.causeTextBox.Size = new System.Drawing.Size(406, 29);
             this.causeTextBox.TabIndex = 7;

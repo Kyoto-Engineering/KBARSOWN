@@ -122,6 +122,7 @@
             // showBankNameTextBox
             // 
             this.showBankNameTextBox.Location = new System.Drawing.Point(140, 36);
+            this.showBankNameTextBox.MaxLength = 150;
             this.showBankNameTextBox.Name = "showBankNameTextBox";
             this.showBankNameTextBox.Size = new System.Drawing.Size(100, 20);
             this.showBankNameTextBox.TabIndex = 8;
@@ -129,6 +130,7 @@
             // showAccountNoTextBox
             // 
             this.showAccountNoTextBox.Location = new System.Drawing.Point(140, 72);
+            this.showAccountNoTextBox.MaxLength = 50;
             this.showAccountNoTextBox.Name = "showAccountNoTextBox";
             this.showAccountNoTextBox.Size = new System.Drawing.Size(100, 20);
             this.showAccountNoTextBox.TabIndex = 9;
@@ -136,6 +138,7 @@
             // showTransactionTypeTextBox
             // 
             this.showTransactionTypeTextBox.Location = new System.Drawing.Point(140, 105);
+            this.showTransactionTypeTextBox.MaxLength = 150;
             this.showTransactionTypeTextBox.Name = "showTransactionTypeTextBox";
             this.showTransactionTypeTextBox.Size = new System.Drawing.Size(100, 20);
             this.showTransactionTypeTextBox.TabIndex = 10;
@@ -143,6 +146,7 @@
             // showbenificiaryTextBox
             // 
             this.showbenificiaryTextBox.Location = new System.Drawing.Point(140, 154);
+            this.showbenificiaryTextBox.MaxLength = 150;
             this.showbenificiaryTextBox.Name = "showbenificiaryTextBox";
             this.showbenificiaryTextBox.Size = new System.Drawing.Size(100, 20);
             this.showbenificiaryTextBox.TabIndex = 11;
@@ -157,6 +161,7 @@
             // showCheckNoTextBox
             // 
             this.showCheckNoTextBox.Location = new System.Drawing.Point(140, 224);
+            this.showCheckNoTextBox.MaxLength = 150;
             this.showCheckNoTextBox.Name = "showCheckNoTextBox";
             this.showCheckNoTextBox.Size = new System.Drawing.Size(100, 20);
             this.showCheckNoTextBox.TabIndex = 13;
@@ -164,6 +169,7 @@
             // showCreditBalanceTextBox
             // 
             this.showCreditBalanceTextBox.Location = new System.Drawing.Point(140, 258);
+            this.showCreditBalanceTextBox.MaxLength = 150;
             this.showCreditBalanceTextBox.Name = "showCreditBalanceTextBox";
             this.showCreditBalanceTextBox.Size = new System.Drawing.Size(100, 20);
             this.showCreditBalanceTextBox.TabIndex = 14;
@@ -171,6 +177,7 @@
             // showCurrentBalanceTextBox
             // 
             this.showCurrentBalanceTextBox.Location = new System.Drawing.Point(140, 299);
+            this.showCurrentBalanceTextBox.MaxLength = 50;
             this.showCurrentBalanceTextBox.Name = "showCurrentBalanceTextBox";
             this.showCurrentBalanceTextBox.Size = new System.Drawing.Size(100, 20);
             this.showCurrentBalanceTextBox.TabIndex = 15;

@@ -44,7 +44,7 @@
             // 
             this.bankNameComboBox.FormattingEnabled = true;
             this.bankNameComboBox.Location = new System.Drawing.Point(472, 47);
-            this.bankNameComboBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.bankNameComboBox.Margin = new System.Windows.Forms.Padding(5);
             this.bankNameComboBox.Name = "bankNameComboBox";
             this.bankNameComboBox.Size = new System.Drawing.Size(387, 29);
             this.bankNameComboBox.TabIndex = 0;
@@ -54,7 +54,7 @@
             // 
             this.cmbAccountDNo.FormattingEnabled = true;
             this.cmbAccountDNo.Location = new System.Drawing.Point(472, 92);
-            this.cmbAccountDNo.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.cmbAccountDNo.Margin = new System.Windows.Forms.Padding(5);
             this.cmbAccountDNo.Name = "cmbAccountDNo";
             this.cmbAccountDNo.Size = new System.Drawing.Size(387, 29);
             this.cmbAccountDNo.TabIndex = 1;
@@ -64,7 +64,7 @@
             // 
             this.chequeComboBox.FormattingEnabled = true;
             this.chequeComboBox.Location = new System.Drawing.Point(472, 136);
-            this.chequeComboBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.chequeComboBox.Margin = new System.Windows.Forms.Padding(5);
             this.chequeComboBox.Name = "chequeComboBox";
             this.chequeComboBox.Size = new System.Drawing.Size(387, 29);
             this.chequeComboBox.TabIndex = 2;
@@ -72,7 +72,8 @@
             // causeTextBox
             // 
             this.causeTextBox.Location = new System.Drawing.Point(472, 179);
-            this.causeTextBox.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.causeTextBox.Margin = new System.Windows.Forms.Padding(5);
+            this.causeTextBox.MaxLength = 50;
             this.causeTextBox.Name = "causeTextBox";
             this.causeTextBox.Size = new System.Drawing.Size(387, 29);
             this.causeTextBox.TabIndex = 3;
@@ -81,7 +82,7 @@
             // 
             this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(472, 304);
-            this.button1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.button1.Margin = new System.Windows.Forms.Padding(5);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(125, 37);
             this.button1.TabIndex = 4;
@@ -150,7 +151,7 @@
             this.Controls.Add(this.bankNameComboBox);
             this.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "ChangeStatusofCheque";
             this.Text = "ChangeStatusofCheque";
             this.Load += new System.EventHandler(this.ChangeStatusofCheque_Load);

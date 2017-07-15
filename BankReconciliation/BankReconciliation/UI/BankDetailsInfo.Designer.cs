@@ -247,6 +247,7 @@
             // branchNameTextBox
             // 
             this.branchNameTextBox.Location = new System.Drawing.Point(223, 110);
+            this.branchNameTextBox.MaxLength = 50;
             this.branchNameTextBox.Name = "branchNameTextBox";
             this.branchNameTextBox.Size = new System.Drawing.Size(235, 29);
             this.branchNameTextBox.TabIndex = 2;

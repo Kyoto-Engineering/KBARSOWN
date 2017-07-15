@@ -48,6 +48,7 @@
             // 
             this.txt2UserName.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt2UserName.Location = new System.Drawing.Point(213, 189);
+            this.txt2UserName.MaxLength = 50;
             this.txt2UserName.Name = "txt2UserName";
             this.txt2UserName.Size = new System.Drawing.Size(176, 29);
             this.txt2UserName.TabIndex = 0;
@@ -77,6 +78,7 @@
             // 
             this.txt2Password.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt2Password.Location = new System.Drawing.Point(213, 241);
+            this.txt2Password.MaxLength = 50;
             this.txt2Password.Name = "txt2Password";
             this.txt2Password.PasswordChar = '*';
             this.txt2Password.Size = new System.Drawing.Size(176, 29);

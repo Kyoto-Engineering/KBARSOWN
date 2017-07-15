@@ -164,6 +164,7 @@
             // eftAccountNoTextBox
             // 
             this.eftAccountNoTextBox.Location = new System.Drawing.Point(269, 414);
+            this.eftAccountNoTextBox.MaxLength = 50;
             this.eftAccountNoTextBox.Name = "eftAccountNoTextBox";
             this.eftAccountNoTextBox.Size = new System.Drawing.Size(293, 32);
             this.eftAccountNoTextBox.TabIndex = 8;
@@ -329,6 +330,7 @@
             // creditTextBox
             // 
             this.creditTextBox.Location = new System.Drawing.Point(269, 279);
+            this.creditTextBox.MaxLength = 150;
             this.creditTextBox.Name = "creditTextBox";
             this.creditTextBox.ShortcutsEnabled = false;
             this.creditTextBox.Size = new System.Drawing.Size(293, 32);
@@ -346,6 +348,7 @@
             // checkNoTextBox
             // 
             this.checkNoTextBox.Location = new System.Drawing.Point(269, 364);
+            this.checkNoTextBox.MaxLength = 150;
             this.checkNoTextBox.Name = "checkNoTextBox";
             this.checkNoTextBox.Size = new System.Drawing.Size(293, 32);
             this.checkNoTextBox.TabIndex = 7;

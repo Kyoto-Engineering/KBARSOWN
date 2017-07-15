@@ -108,6 +108,7 @@
             // 
             this.textBox2.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(222, 50);
+            this.textBox2.MaxLength = 50;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(307, 32);
             this.textBox2.TabIndex = 71;
@@ -204,6 +205,7 @@
             // 
             this.eftAccountNoWTextBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eftAccountNoWTextBox.Location = new System.Drawing.Point(225, 432);
+            this.eftAccountNoWTextBox.MaxLength = 50;
             this.eftAccountNoWTextBox.Name = "eftAccountNoWTextBox";
             this.eftAccountNoWTextBox.Size = new System.Drawing.Size(307, 32);
             this.eftAccountNoWTextBox.TabIndex = 5;
@@ -302,6 +304,7 @@
             // 
             this.benificiaryWTextBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.benificiaryWTextBox.Location = new System.Drawing.Point(225, 203);
+            this.benificiaryWTextBox.MaxLength = 150;
             this.benificiaryWTextBox.Name = "benificiaryWTextBox";
             this.benificiaryWTextBox.Size = new System.Drawing.Size(307, 32);
             this.benificiaryWTextBox.TabIndex = 6;
@@ -382,6 +385,7 @@
             // 
             this.creditWTextBox.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.creditWTextBox.Location = new System.Drawing.Point(225, 297);
+            this.creditWTextBox.MaxLength = 150;
             this.creditWTextBox.Name = "creditWTextBox";
             this.creditWTextBox.ShortcutsEnabled = false;
             this.creditWTextBox.Size = new System.Drawing.Size(307, 32);

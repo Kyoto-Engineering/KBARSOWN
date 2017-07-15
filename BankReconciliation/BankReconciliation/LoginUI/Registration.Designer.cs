@@ -84,6 +84,7 @@
             // 
             this.txtContact_no.Location = new System.Drawing.Point(232, 254);
             this.txtContact_no.Margin = new System.Windows.Forms.Padding(5);
+            this.txtContact_no.MaxLength = 11;
             this.txtContact_no.Name = "txtContact_no";
             this.txtContact_no.Size = new System.Drawing.Size(219, 24);
             this.txtContact_no.TabIndex = 3;
@@ -92,6 +93,7 @@
             // 
             this.txtEmail_Address.Location = new System.Drawing.Point(232, 325);
             this.txtEmail_Address.Margin = new System.Windows.Forms.Padding(5);
+            this.txtEmail_Address.MaxLength = 50;
             this.txtEmail_Address.Name = "txtEmail_Address";
             this.txtEmail_Address.Size = new System.Drawing.Size(407, 24);
             this.txtEmail_Address.TabIndex = 4;
@@ -100,6 +102,7 @@
             // 
             this.txtName.Location = new System.Drawing.Point(232, 187);
             this.txtName.Margin = new System.Windows.Forms.Padding(5);
+            this.txtName.MaxLength = 50;
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(407, 24);
             this.txtName.TabIndex = 2;
@@ -109,6 +112,7 @@
             // 
             this.txtPassword.Location = new System.Drawing.Point(232, 121);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(5);
+            this.txtPassword.MaxLength = 50;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(284, 24);
@@ -162,6 +166,7 @@
             // 
             this.txtUsername.Location = new System.Drawing.Point(232, 55);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(5);
+            this.txtUsername.MaxLength = 50;
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(284, 24);
             this.txtUsername.TabIndex = 0;

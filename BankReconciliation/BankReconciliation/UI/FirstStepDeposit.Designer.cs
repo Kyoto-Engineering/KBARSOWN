@@ -149,6 +149,7 @@
             // chequeFromBankTextBox
             // 
             this.chequeFromBankTextBox.Location = new System.Drawing.Point(213, 190);
+            this.chequeFromBankTextBox.MaxLength = 200;
             this.chequeFromBankTextBox.Name = "chequeFromBankTextBox";
             this.chequeFromBankTextBox.Size = new System.Drawing.Size(293, 32);
             this.chequeFromBankTextBox.TabIndex = 38;
@@ -218,6 +219,7 @@
             // creditTextBox
             // 
             this.creditTextBox.Location = new System.Drawing.Point(213, 350);
+            this.creditTextBox.MaxLength = 150;
             this.creditTextBox.Name = "creditTextBox";
             this.creditTextBox.Size = new System.Drawing.Size(293, 32);
             this.creditTextBox.TabIndex = 29;
@@ -232,6 +234,7 @@
             // checkNoTextBox
             // 
             this.checkNoTextBox.Location = new System.Drawing.Point(213, 295);
+            this.checkNoTextBox.MaxLength = 150;
             this.checkNoTextBox.Name = "checkNoTextBox";
             this.checkNoTextBox.Size = new System.Drawing.Size(293, 32);
             this.checkNoTextBox.TabIndex = 26;
