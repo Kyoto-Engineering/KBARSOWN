@@ -71,18 +71,20 @@
             "Midland Bank Limited",
             "Modhumoti Bank Limited",
             "Mutual Trust Bank Limited",
-            "National Bank of Pakistan",
             "National Bank Limited",
+            "National Bank of Pakistan",
             "NCC Bank Limited",
             "NRB Bank Limited",
             "NRB Commercial Bank Limited",
             "NRB Global Bank Limited",
             "One Bank Limited",
+            "Palli Sanchay Bank",
             "Prime Bank Limited",
             "Pubali Bank Limited",
             "Rajshahi Krishi Unnoyon Bank (RKUB)",
             "Rupali Bank Limited",
             "Shahjalal islami Bank Limited",
+            "Shimanto Bank Limited",
             "Social Islami Bank Limited ",
             "Sonali Bank Limited ",
             "South Bangla Agriculture and Commerce Bank Limited ",
@@ -94,12 +96,12 @@
             "The Farmers Bank Limited",
             "The Premier Bank Limited",
             "Trust Bank Limited",
+            "Union Bank Limited",
             "United Commercial Bank Limited",
             "Uttara Bank Limited ",
-            "Union Bank Limited",
             "Woori Bank"});
             this.bankSelectionComboBox.Location = new System.Drawing.Point(332, 144);
-            this.bankSelectionComboBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.bankSelectionComboBox.Margin = new System.Windows.Forms.Padding(6);
             this.bankSelectionComboBox.Name = "bankSelectionComboBox";
             this.bankSelectionComboBox.Size = new System.Drawing.Size(301, 32);
             this.bankSelectionComboBox.TabIndex = 0;
@@ -120,7 +122,7 @@
             // 
             this.accountNoComboBox.FormattingEnabled = true;
             this.accountNoComboBox.Location = new System.Drawing.Point(332, 196);
-            this.accountNoComboBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.accountNoComboBox.Margin = new System.Windows.Forms.Padding(6);
             this.accountNoComboBox.Name = "accountNoComboBox";
             this.accountNoComboBox.Size = new System.Drawing.Size(301, 32);
             this.accountNoComboBox.TabIndex = 2;
@@ -140,7 +142,7 @@
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(61, 391);
-            this.button1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button1.Margin = new System.Windows.Forms.Padding(6);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(152, 65);
             this.button1.TabIndex = 4;
@@ -152,7 +154,7 @@
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(293, 390);
-            this.button2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button2.Margin = new System.Windows.Forms.Padding(6);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(138, 66);
             this.button2.TabIndex = 5;
@@ -164,7 +166,7 @@
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(512, 390);
-            this.button3.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button3.Margin = new System.Windows.Forms.Padding(6);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(158, 65);
             this.button3.TabIndex = 6;
@@ -188,7 +190,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "BankstatementUI";
             this.Text = "BankstatementUI";
             this.ResumeLayout(false);
