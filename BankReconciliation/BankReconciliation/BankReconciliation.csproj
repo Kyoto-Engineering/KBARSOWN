@@ -129,6 +129,12 @@
     <Compile Include="DbGateway\ConnectionString.cs" />
     <Compile Include="DbGateway\ConnectionGateway.cs" />
     <Compile Include="Manager\UserManager.cs" />
+    <Compile Include="Reports\BankAsiaCheque.cs">
+      <DependentUpon>BankAsiaCheque.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Reports\AllDepositStatementCrystalReport.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -181,12 +187,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BenificiaryPaymentStatementCrystalReport.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Reports\BankAsiaCheque.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BankAsiaCheque.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Reports\ABBankCheque.cs">
@@ -446,6 +446,10 @@
     <EmbeddedResource Include="LoginUI\UserRegistrationForm.resx">
       <DependentUpon>UserRegistrationForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reports\BankAsiaCheque.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BankAsiaCheque.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\AllDepositStatementCrystalReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>AllDepositStatementCrystalReport.cs</LastGenOutput>
@@ -478,10 +482,6 @@
     <EmbeddedResource Include="Reports\BenificiaryPaymentStatementCrystalReport.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>BenificiaryPaymentStatementCrystalReport.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\BankAsiaCheque.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>BankAsiaCheque.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\ABBankCheque.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
