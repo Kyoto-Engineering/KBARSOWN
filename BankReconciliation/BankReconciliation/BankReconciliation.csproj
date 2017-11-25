@@ -27,7 +27,7 @@
     <MinimumRequiredVersion>1.0.0.27</MinimumRequiredVersion>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>40</ApplicationRevision>
+    <ApplicationRevision>41</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -692,6 +692,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bank_reconcilliation_management_box__g1r_icon.ico" />
+    <None Include="Resources\banner 4.png" />
+    <None Include="Resources\Logo_withoutname R marked.png" />
+    <None Include="Resources\Bank ReconciliationFinal.jpg" />
+    <None Include="Resources\whiteyglossyrectanglebuttonmd.png" />
   </ItemGroup>
   <ItemGroup>
     <PublishFile Include="CrystalDecisions.CrystalReports.Engine">

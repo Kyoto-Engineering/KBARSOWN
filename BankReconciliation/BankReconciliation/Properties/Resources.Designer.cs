@@ -63,6 +63,16 @@ namespace BankReconciliation.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Bank_ReconciliationFinal {
+            get {
+                object obj = ResourceManager.GetObject("Bank ReconciliationFinal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Bank_Recounciliation {
             get {
                 object obj = ResourceManager.GetObject("Bank Recounciliation", resourceCulture);
@@ -76,6 +86,16 @@ namespace BankReconciliation.Properties {
         internal static System.Drawing.Bitmap Bank_Recounciliation1 {
             get {
                 object obj = ResourceManager.GetObject("Bank Recounciliation1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap banner_4 {
+            get {
+                object obj = ResourceManager.GetObject("banner 4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -136,6 +156,26 @@ namespace BankReconciliation.Properties {
         internal static System.Drawing.Bitmap img36 {
             get {
                 object obj = ResourceManager.GetObject("img36", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_withoutname_R_marked {
+            get {
+                object obj = ResourceManager.GetObject("Logo_withoutname R marked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap whiteyglossyrectanglebuttonmd {
+            get {
+                object obj = ResourceManager.GetObject("whiteyglossyrectanglebuttonmd", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

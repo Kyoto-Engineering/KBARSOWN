@@ -124,22 +124,34 @@
   <data name="images2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="whiteyglossyrectanglebuttonmd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\whiteyglossyrectanglebuttonmd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="img3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Bank Recounciliation" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bank Recounciliation.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="images22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images22.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Bank Recounciliation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bank Recounciliation.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bank Recounciliation1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bank Recounciliation1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bank ReconciliationFinal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Bank ReconciliationFinal.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="img36" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img36.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo_withoutname R marked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo_withoutname R marked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="id-login-form" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\id-login-form.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Bank Recounciliation1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Bank Recounciliation1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="banner 4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\banner 4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
